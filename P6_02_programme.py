@@ -20,7 +20,7 @@ image_preprocessed = preprocess_input(image)
 image_to_predict = (np.expand_dims(image_preprocessed, 0))
 
 # Model loading and prediction
-model = load_model(os.path.join(os.getcwd(), "callbacks/checkpoints/DOG-BREED-CNN-VGG16-FCB-1588331048.hdf5"))
+model = load_model(os.path.join(os.getcwd(), "callbacks/checkpoints/DOG-BREED-CNN-RESNET-RL-1588347482.hdf5"))
 predictions = model.predict(image_to_predict)
 
 # Print 5 max predictions
